@@ -1,0 +1,5 @@
+# Install in the ALREADY compatible ROS/FrankaPy environment, not in a new arbitrary venv.
+numpy
+scipy
+# External workspace supplies rospy, frankapy, autolab_core,
+# franka_interface_msgs, franka_gripper and the original native driver.

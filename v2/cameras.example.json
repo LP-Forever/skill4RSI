@@ -1,0 +1,6 @@
+{
+  "kinect_0": "SET_KINECT_0_IDENTITY",
+  "kinect_1": "SET_KINECT_1_IDENTITY",
+  "realsense_0": "SET_REALSENSE_0_IDENTITY",
+  "realsense_1": "SET_REALSENSE_1_IDENTITY"
+}

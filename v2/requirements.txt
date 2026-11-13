@@ -1,0 +1,9 @@
+# Python >=3.11 for this model/skill/camera integration. V2 itself is external.
+PyYAML>=6
+numpy
+scipy
+opencv-python
+aiortc
+aiohttp
+Pillow
+# Optional calibration profile queries also require your existing pyrealsense2 install.

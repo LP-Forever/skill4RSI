@@ -1,0 +1,30 @@
+# Local settings, identities, tasks and credentials
+.env
+.env.*
+!.env.example
+**/*.local.*
+**/task.local.txt
+*.pem
+*.key
+# Runtime evidence / caches / virtual environments
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+**/runs/*
+!**/runs/.gitkeep
+*.log
+*.mp4
+*.avi
+*.npz
+*.lock
+# Memory and task reference assets are intentionally local-only
+**/halo_skill_memory/**
+!**/halo_skill_memory/.gitkeep
+!**/halo_skill_memory/task_references/
+!**/halo_skill_memory/task_references/.gitkeep
+
+**/.venv/
+**/venv/
+**/local_site/

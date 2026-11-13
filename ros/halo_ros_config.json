@@ -1,0 +1,33 @@
+{
+  "protocol": "halo_ros_action_chunks_v1",
+  "model": "gpt-6-astra",
+  "model_base_url": "http://127.0.0.1:8411/v1",
+  "reasoning_effort": "high",
+  "timeout_s": 600,
+  "max_output_tokens": 120000,
+  "policy_url": "http://127.0.0.1:7777",
+  "camera_url": "http://127.0.0.1:5000",
+  "console_url": "http://127.0.0.1:6657",
+  "chunk_size": 20,
+  "publish_hz": 15,
+  "interp_per_row": 40,
+  "stiffnesses": [
+    900,
+    900,
+    600,
+    75,
+    75,
+    75
+  ],
+  "max_chunks": 100,
+  "gripper_width_m": 0.08,
+  "gripper_speed_mps": 0.08,
+  "gripper_force_n": 20,
+  "task_reference_set": "halo_skill_memory/task_references/YOUR_SET/reference_set.json",
+  "memory_dir": "halo_skill_memory",
+  "task_prompt_file": "task.local.txt",
+  "run_dir": "runs",
+  "backend": "ROS_Frankapy_dynamic_impedance",
+  "geometry": "minimum_jerk_translation_SLerp_direct_ROS_O_T_EE_no_IK_FK_frame_remap",
+  "release_status": "initial_experimental_not_current_default"
+}

@@ -1,0 +1,16 @@
+# Current default integration: V2 STANDARD. Fill in the external V2 SDK path.
+policy_url: "http://127.0.0.1:7777/predict"
+model_base_url: "http://127.0.0.1:8411/v1"
+model: "gpt-6-astra"
+reasoning_effort: "high"
+timeout_s: 600
+planning_max_output_tokens: 120000
+record_fps: 2
+arm_speed_scale: 0.5
+console_url: "http://127.0.0.1:6657"
+camera_python: "python3"
+v2_sdk_path: "__SET_EXTERNAL_V2_PYTHON_PATH__"
+memory_dir: "halo_skill_memory"
+run_dir: "runs"
+# Optional calibration is deliberately NOT configured in this portable template.
+# Add the calibration block documented in README.md only with your own verified files.

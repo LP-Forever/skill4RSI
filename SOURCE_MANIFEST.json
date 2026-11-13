@@ -1,0 +1,716 @@
+{
+  "schema": "skill4rsi_source_manifest_v1",
+  "snapshot_date": "2026-11-13",
+  "current_chain": "v2_STANDARD",
+  "ros_status": "initial_experimental",
+  "sources": [
+    {
+      "source_file": "halo_action_service.py",
+      "destination_file": "v2/model_io.py",
+      "source_sha256": "06a4f59b475f7c52055bfbe014d773cedb5981cbef83211b33557e154c7c572f",
+      "packaging_change": "extract PolicyError, number, JPEG validation and request_prediction only",
+      "details": "Old action-server prompt / endpoints / old task excluded; callers explicitly supply instructions"
+    },
+    {
+      "source_file": "halo_task_references.py",
+      "destination_file": "v2/halo_task_references.py",
+      "source_sha256": "f3ef4b586fcc59a4a082febf8f2fe528031da0c3d2f696798d4b93c705a4aa74",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "pi05_house_cameras.py",
+      "destination_file": "v2/camera_preview.py",
+      "source_sha256": "fc185f0ffce04a3f40f84c5465b121cfebb9e3070cb1428773681c3fbefd7e35",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_model_usage.py",
+      "destination_file": "v2/halo_model_usage.py",
+      "source_sha256": "e8dd6d7f5ffed2d5580425d22e570bb8549a153740b1413b0c3e9e10e1125dfd",
+      "packaging_change": "unchanged",
+      "details": ""
+    },
+    {
+      "source_file": "test_halo_model_usage.py",
+      "destination_file": "v2/tests/test_model_usage.py",
+      "source_sha256": "916d136bc5068b2028698e8384c22bfb982d55c0c61a9b5b9b7ae7858902d830",
+      "packaging_change": "imports / packaging names only",
+      "details": "Offline model_io import rename; fixture model names and usage are synthetic, not actual calls."
+    },
+    {
+      "source_file": "halo_action_service.py",
+      "destination_file": "ros/model_io.py",
+      "source_sha256": "06a4f59b475f7c52055bfbe014d773cedb5981cbef83211b33557e154c7c572f",
+      "packaging_change": "extract PolicyError, number, JPEG validation and request_prediction only",
+      "details": "Old action-server prompt / endpoints / old task excluded; callers explicitly supply instructions"
+    },
+    {
+      "source_file": "halo_task_references.py",
+      "destination_file": "ros/halo_task_references.py",
+      "source_sha256": "f3ef4b586fcc59a4a082febf8f2fe528031da0c3d2f696798d4b93c705a4aa74",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "pi05_house_cameras.py",
+      "destination_file": "ros/camera_preview.py",
+      "source_sha256": "fc185f0ffce04a3f40f84c5465b121cfebb9e3070cb1428773681c3fbefd7e35",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_model_usage.py",
+      "destination_file": "ros/halo_model_usage.py",
+      "source_sha256": "e8dd6d7f5ffed2d5580425d22e570bb8549a153740b1413b0c3e9e10e1125dfd",
+      "packaging_change": "unchanged",
+      "details": ""
+    },
+    {
+      "source_file": "test_halo_model_usage.py",
+      "destination_file": "ros/tests/test_model_usage.py",
+      "source_sha256": "916d136bc5068b2028698e8384c22bfb982d55c0c61a9b5b9b7ae7858902d830",
+      "packaging_change": "imports / packaging names only",
+      "details": "Offline model_io import rename; fixture model names and usage are synthetic, not actual calls."
+    },
+    {
+      "source_file": "halo_skill_service.py",
+      "destination_file": "v2/halo_skill_service.py",
+      "source_sha256": "fb4ad2d9f3c24da8121c079c56ceba88376d80dcbc54a73f33d4329191ab37de",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_pipeline_skills.py",
+      "destination_file": "v2/halo_pipeline_skills.py",
+      "source_sha256": "4a53c778bcd5770c9be0648b482fac9b87f582e0ca157c952ec9ebdf7486676b",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "robot_calibration/block_skills_v2.py",
+      "destination_file": "v2/robot_calibration/block_skills_v2.py",
+      "source_sha256": "f86b567b55fc5ed157abe29676c95d46bdfa13c3592b61ec1b553d0efb1b6c1b",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "robot_calibration/skill_calibration.py",
+      "destination_file": "v2/robot_calibration/skill_calibration.py",
+      "source_sha256": "a50f5b54b8c712f10bfa282801a05a9b80d89273159d17573bfb5870dd28d51f",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "trajectory_executor_v2.py",
+      "destination_file": "v2/v2_state.py",
+      "source_sha256": "a11c652c0d11e8e368abd9fbc102600b647b8b3eb4061a05e5ecbcedfe67cbb8",
+      "packaging_change": "extract feedback guard and quaternion multiply only",
+      "details": "Old 7D chunk executor excluded"
+    },
+    {
+      "source_file": "halo_pipeline_house.py",
+      "destination_file": "v2/v2_transport.py",
+      "source_sha256": "0fcc456f9a3fbd1f5414b065fdee74089597076e4d9810ec919c6a08de0689be",
+      "packaging_change": "extract Cameras + HouseExecutor monitoring methods; omit old 10D execute()",
+      "details": "Camera transport and native operation-result monitoring only"
+    },
+    {
+      "source_file": "halo_pipeline_v2.py",
+      "destination_file": "v2/v2_transport.py",
+      "source_sha256": "183950b73b7453050744f81a39119864a96da1d060c31a8004cdd4795a6cb032",
+      "packaging_change": "extract request_json only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_ros_action_service.py",
+      "destination_file": "ros/halo_ros_action_service.py",
+      "source_sha256": "0cb96029466768ede46f81d8919664c6e3403a879823573bab5f88dca6f16e9e",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_pipeline_ros.py",
+      "destination_file": "ros/halo_pipeline_ros.py",
+      "source_sha256": "46b58d39a3eaef938a6b5994c0528a0cf47a81f4d7bcbfcf747f391a50681934",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_ros_protocol.py",
+      "destination_file": "ros/halo_ros_protocol.py",
+      "source_sha256": "9b716c119524545cd6a5ee4ba640939dcad3def23e5f091c83e678f677d89969",
+      "packaging_change": "imports / packaging names and portable config file-path resolution",
+      "details": "Resolve reference, memory, task and run paths against this branch ROOT; absolute paths remain absolute."
+    },
+    {
+      "source_file": "halo_ros_runtime.py",
+      "destination_file": "ros/halo_ros_runtime.py",
+      "source_sha256": "7f1eb38f14b717708016d0dc2a3218933cb6910aed6b2829d4cad464f402651f",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "halo_ros_camera_service.py",
+      "destination_file": "ros/halo_ros_camera_service.py",
+      "source_sha256": "7fa53b50968993b7d0227eb2a4a8ae0d24e0df425ec913267cb7e7e34ed97951",
+      "packaging_change": "imports / packaging names only",
+      "details": ""
+    },
+    {
+      "source_file": "trajectory_executor_ros.py",
+      "destination_file": "ros/trajectory_executor_ros.py",
+      "source_sha256": "5f50e996fd685e28d9bd7591439b6fceccfbc6e34ce3d449c0666cf631ce0f42",
+      "packaging_change": "use packaged pure RosChunkGeometry instead of original TrajectoryExecutor",
+      "details": "Only pure interpolation dependency replaced; external ROS/FrankaPy controller not copied."
+    },
+    {
+      "source_file": "trajectory_executor.py",
+      "destination_file": "ros/ros_chunk_geometry.py",
+      "source_sha256": "9e3955168d34f14e62fa18b66a0db0d11337713473a83b72fe4de2d758a0bc4a",
+      "packaging_change": "extract four pure geometry methods + orthonormalize_rotation only",
+      "details": "Original trajectory executor, IK/FK, torch/curobo and ROS torque controllers excluded; method bodies unchanged"
+    },
+    {
+      "source_file": "test_halo_ros.py",
+      "destination_file": "ros/tests/test_ros_contract.py",
+      "source_sha256": "64d16d07e83ef0beaa9ce3b0a8b277bbda342cd4ba02cfe69ecc9f22c031c334",
+      "packaging_change": "imports / packaging names only",
+      "details": "Offline tests only; supplemented by package-specific pure-geometry and independent reference-loader tests."
+    },
+    {
+      "source_file": "analysis_artifacts/v2_standard_compliant_control.png",
+      "destination_file": "v2_standard_compliant_control.png",
+      "source_sha256": "c771633ca01eb2ac3920ebbf04ff638cac0bc18063c6dfd0697566fb09139867",
+      "packaging_change": "unchanged",
+      "details": ""
+    }
+  ],
+  "live_project_modified": false,
+  "upstream_robot_control_stacks_included": false,
+  "memory_content_included": false,
+  "note": "Source paths are descriptive local project-relative names, not upstream Git commit IDs.",
+  "packaging_additions": {
+    "new_entrypoints": [
+      "v2/start_model.py",
+      "v2/run_task.py",
+      "ros/run_task.py",
+      "ros/run_task.sh"
+    ],
+    "new_shared_helpers_each_branch": [
+      "camera_ids.py",
+      "prepare_references.py"
+    ],
+    "new_templates_each_branch": [
+      "cameras.example.json",
+      "task.example.txt"
+    ],
+    "new_tests": [
+      "v2/tests/fake_v2.py",
+      "v2/tests/test_v2_bundle.py",
+      "v2/tests/test_references.py",
+      "ros/tests/test_pure_geometry.py",
+      "ros/tests/test_references.py"
+    ],
+    "configuration": "Portable sanitized templates; no enabled local calibration, real camera identities, credentials or historical memory.",
+    "tests_fixture_corrections": [
+      "FakeRobot direct grasp/move tests model writer ownership explicitly.",
+      "ROS reference fixture is independent of V2 service imports."
+    ],
+    "documentation": [
+      "README.md",
+      "v2/README.md",
+      "ros/README.md",
+      "GITHUB_UPLOAD.md",
+      "VALIDATION.md"
+    ],
+    "empty_frameworks": [
+      "v2/halo_skill_memory/",
+      "v2/halo_skill_memory/task_references/",
+      "v2/runs/",
+      "ros/halo_skill_memory/",
+      "ros/halo_skill_memory/task_references/",
+      "ros/runs/"
+    ]
+  },
+  "offline_validation": {
+    "scope": "offline_only_no_model_network_or_hardware_calls",
+    "unit_tests": {
+      "v2": {
+        "passed": 24,
+        "failed": 0
+      },
+      "ros": {
+        "passed": 23,
+        "failed": 0
+      }
+    },
+    "compiled_python_files": 37,
+    "ros_python38_syntax_files": [
+      "run_task.py",
+      "halo_pipeline_ros.py",
+      "halo_ros_runtime.py",
+      "halo_ros_protocol.py",
+      "trajectory_executor_ros.py",
+      "ros_chunk_geometry.py"
+    ],
+    "bash_syntax": "passed",
+    "source_ast_comparisons": [
+      {
+        "source": "trajectory_executor_v2.py:multiply_quaternions",
+        "destination": "v2/v2_state.py:multiply_quaternions",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor_v2.py:require_state",
+        "destination": "v2/v2_state.py:require_state",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_pipeline_v2.py:request_json",
+        "destination": "v2/v2_transport.py:request_json",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_pipeline_house.py:Cameras",
+        "destination": "v2/v2_transport.py:Cameras",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_pipeline_house.py:HouseExecutor.__init__",
+        "destination": "v2/v2_transport.py:HouseExecutor.__init__",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_pipeline_house.py:HouseExecutor.log",
+        "destination": "v2/v2_transport.py:HouseExecutor.log",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_pipeline_house.py:HouseExecutor.state",
+        "destination": "v2/v2_transport.py:HouseExecutor.state",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_pipeline_house.py:HouseExecutor.read_state",
+        "destination": "v2/v2_transport.py:HouseExecutor.read_state",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_pipeline_house.py:HouseExecutor.wait",
+        "destination": "v2/v2_transport.py:HouseExecutor.wait",
+        "comparison": "AST_equal_after_documented_import_or_camera_filename_rename"
+      },
+      {
+        "source": "halo_action_service.py:PolicyError",
+        "destination": "v2/model_io.py:PolicyError",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:number",
+        "destination": "v2/model_io.py:number",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:decode_camera_images",
+        "destination": "v2/model_io.py:decode_camera_images",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:request_prediction",
+        "destination": "v2/model_io.py:request_prediction",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:PolicyError",
+        "destination": "ros/model_io.py:PolicyError",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:number",
+        "destination": "ros/model_io.py:number",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:decode_camera_images",
+        "destination": "ros/model_io.py:decode_camera_images",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "halo_action_service.py:request_prediction",
+        "destination": "ros/model_io.py:request_prediction",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor.py:orthonormalize_rotation",
+        "destination": "ros/ros_chunk_geometry.py:orthonormalize_rotation",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor.py:TrajectoryExecutor.compute_min_jerk_scalar",
+        "destination": "ros/ros_chunk_geometry.py:RosChunkGeometry.compute_min_jerk_scalar",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor.py:TrajectoryExecutor.interpolate_rotation_slerp",
+        "destination": "ros/ros_chunk_geometry.py:RosChunkGeometry.interpolate_rotation_slerp",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor.py:TrajectoryExecutor.delta_to_absolute_waypoints",
+        "destination": "ros/ros_chunk_geometry.py:RosChunkGeometry.delta_to_absolute_waypoints",
+        "comparison": "AST_equal"
+      },
+      {
+        "source": "trajectory_executor.py:TrajectoryExecutor.build_cartesian_trajectory",
+        "destination": "ros/ros_chunk_geometry.py:RosChunkGeometry.build_cartesian_trajectory",
+        "comparison": "AST_equal"
+      }
+    ],
+    "pure_geometry_random_comparisons": {
+      "chunks": 30,
+      "rows_per_chunk": 20,
+      "atol": 1e-12,
+      "rtol": 0
+    },
+    "cli_help": {
+      "v2": [
+        "start_model.py",
+        "run_task.py",
+        "prepare_references.py"
+      ],
+      "ros": [
+        "halo_ros_action_service.py",
+        "halo_ros_camera_service.py",
+        "run_task.py",
+        "prepare_references.py"
+      ]
+    },
+    "prepare_references_fixture": "passed_both_branches_8_synthetic_jpegs_loader_and_no_overwrite",
+    "package_hygiene": "empty_memory_and_runs_no_git_no_cache_no_home_paths_in_python_no_common_secret_patterns_png_exact_copy"
+  },
+  "delivery_status": {
+    "local_package_prepared": true,
+    "final_directory_confirmed": true,
+    "git_initialized": false,
+    "git_staged": false,
+    "git_committed": false,
+    "git_pushed": false,
+    "github_repository_created": false,
+    "copied_to_confirmed_directory": true
+  },
+  "packaged_files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 525,
+      "sha256": "2f71d6a01e92cc4f989f27a0ad12c8d34fc4b4f7a12e6a908cf35250bd6667a9"
+    },
+    {
+      "path": "GITHUB_UPLOAD.md",
+      "size_bytes": 4011,
+      "sha256": "73f6786347306c9ca17227aee76dffa3aa77bde5b6f5b476c2f7df9dece5dc32"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3219,
+      "sha256": "2566613e9542a67ee6f18ccfd96a62a48afdb301ee1eeb5cd55bfc07cef2c9ca"
+    },
+    {
+      "path": "VALIDATION.md",
+      "size_bytes": 4053,
+      "sha256": "6ac7e3e7bfce0b9d4490f86f2989f38288a00cb16388c52aebb3918e52e6cc17"
+    },
+    {
+      "path": "ros/README.md",
+      "size_bytes": 10164,
+      "sha256": "af43c5d67f6ce370003509940d86014597817d34ab44160bd557119e0167d903"
+    },
+    {
+      "path": "ros/camera_ids.py",
+      "size_bytes": 831,
+      "sha256": "5fe120bbeaeebb8d26571619055729f34a85b57aa6e73491e03fd132e9759501"
+    },
+    {
+      "path": "ros/camera_preview.py",
+      "size_bytes": 9222,
+      "sha256": "b3561e24f8a93edf9274734d8a28b61f962e9b75218bb84df4bf4c81de762f77"
+    },
+    {
+      "path": "ros/cameras.example.json",
+      "size_bytes": 171,
+      "sha256": "a209958c1f6b6e1fbd3068156748da2381ff5e472d80ba9a5a62ad26a823cf4b"
+    },
+    {
+      "path": "ros/halo_model_usage.py",
+      "size_bytes": 8249,
+      "sha256": "e8dd6d7f5ffed2d5580425d22e570bb8549a153740b1413b0c3e9e10e1125dfd"
+    },
+    {
+      "path": "ros/halo_pipeline_ros.py",
+      "size_bytes": 7575,
+      "sha256": "46b58d39a3eaef938a6b5994c0528a0cf47a81f4d7bcbfcf747f391a50681934"
+    },
+    {
+      "path": "ros/halo_ros_action_service.py",
+      "size_bytes": 10677,
+      "sha256": "966efb4289f261ad115c35fcc565f0d8c789495dac3d3a63884059d055fba61c"
+    },
+    {
+      "path": "ros/halo_ros_camera_service.py",
+      "size_bytes": 1551,
+      "sha256": "54ff4c35c562c40fcc646e9f131ea762cd33fc1fec2b88c6c7ccad4ad1bb9f65"
+    },
+    {
+      "path": "ros/halo_ros_config.json",
+      "size_bytes": 950,
+      "sha256": "710faa837de73a5d49f5c35b0a6975db171f79c36e9ee6d915a6692180a996f9"
+    },
+    {
+      "path": "ros/halo_ros_protocol.py",
+      "size_bytes": 3297,
+      "sha256": "5d30147a2204628583e37295e1df49e323b6d2f68d91785e4808b1c98ed50bee"
+    },
+    {
+      "path": "ros/halo_ros_runtime.py",
+      "size_bytes": 5090,
+      "sha256": "7f1eb38f14b717708016d0dc2a3218933cb6910aed6b2829d4cad464f402651f"
+    },
+    {
+      "path": "ros/halo_skill_memory/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ros/halo_skill_memory/task_references/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ros/halo_task_references.py",
+      "size_bytes": 3588,
+      "sha256": "85e47ec74704b39e6056351c1fb7bf3e76b44b3e9dc7853a0d083cefab382817"
+    },
+    {
+      "path": "ros/model_io.py",
+      "size_bytes": 6096,
+      "sha256": "ca4f832e2f370b6cd86d1bff6d4b0d64539a9ba023d85bb9ff1b6adfb2ab33da"
+    },
+    {
+      "path": "ros/prepare_references.py",
+      "size_bytes": 2756,
+      "sha256": "cba717aa1f5744d129192ab4a2e89bd67a6882a623fc184b5cc98313822457e0"
+    },
+    {
+      "path": "ros/requirements-executor.txt",
+      "size_bytes": 236,
+      "sha256": "123b861201e568bb5e6553d970b79365bfee17b6aadcf0ce0eee0693812a4367"
+    },
+    {
+      "path": "ros/requirements-model.txt",
+      "size_bytes": 112,
+      "sha256": "86130fc1f5fd5684d0d3b579812b49028108bacd4f1bb2be6445f68d5e4a0c99"
+    },
+    {
+      "path": "ros/ros_chunk_geometry.py",
+      "size_bytes": 3288,
+      "sha256": "734f643798c543bd5acc86773fb9fc1b4c13e8e3ba37be51f8e2730ef19ae407"
+    },
+    {
+      "path": "ros/run_task.py",
+      "size_bytes": 167,
+      "sha256": "ef2550b260f640d1aac86c1be223037d06b74f570eef1efa70163496cb089dbc"
+    },
+    {
+      "path": "ros/run_task.sh",
+      "size_bytes": 546,
+      "sha256": "ff196916c29f24d31b9a0a10e2c7fe0f8e6d9f2e1df0d53c64f7b44f96183e8e"
+    },
+    {
+      "path": "ros/runs/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ros/task.example.txt",
+      "size_bytes": 343,
+      "sha256": "0d56ddfa778a2b8aef04c61f6b5e3b2420e9ee452d59cc7cfb2078f71ef28229"
+    },
+    {
+      "path": "ros/tests/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ros/tests/test_model_usage.py",
+      "size_bytes": 7130,
+      "sha256": "303c445ab80f40ccee4ceaab4f2810c0af621d389f18be0182b99840fd676ca3"
+    },
+    {
+      "path": "ros/tests/test_pure_geometry.py",
+      "size_bytes": 1629,
+      "sha256": "19b8a93577c0499b07691f09d3e6f4bd868526548bb81e607715c8e197a1f0e2"
+    },
+    {
+      "path": "ros/tests/test_references.py",
+      "size_bytes": 2832,
+      "sha256": "234d5bc422fca203bb708ce1cdf252c72f1f1752be495bebd0214986a6f8f266"
+    },
+    {
+      "path": "ros/tests/test_ros_contract.py",
+      "size_bytes": 4526,
+      "sha256": "64d16d07e83ef0beaa9ce3b0a8b277bbda342cd4ba02cfe69ecc9f22c031c334"
+    },
+    {
+      "path": "ros/trajectory_executor_ros.py",
+      "size_bytes": 10085,
+      "sha256": "8ece49d5912c74aba92eee78c9ba3162ca20baf46bdc03f22ac78cdf32dbecd0"
+    },
+    {
+      "path": "v2/README.md",
+      "size_bytes": 12876,
+      "sha256": "12901cf5c860639aff2caf6329ef0f03af98c1dee3e785b1a5921b2954ee235d"
+    },
+    {
+      "path": "v2/camera_ids.py",
+      "size_bytes": 831,
+      "sha256": "5fe120bbeaeebb8d26571619055729f34a85b57aa6e73491e03fd132e9759501"
+    },
+    {
+      "path": "v2/camera_preview.py",
+      "size_bytes": 9222,
+      "sha256": "b3561e24f8a93edf9274734d8a28b61f962e9b75218bb84df4bf4c81de762f77"
+    },
+    {
+      "path": "v2/cameras.example.json",
+      "size_bytes": 171,
+      "sha256": "a209958c1f6b6e1fbd3068156748da2381ff5e472d80ba9a5a62ad26a823cf4b"
+    },
+    {
+      "path": "v2/halo_model_usage.py",
+      "size_bytes": 8249,
+      "sha256": "e8dd6d7f5ffed2d5580425d22e570bb8549a153740b1413b0c3e9e10e1125dfd"
+    },
+    {
+      "path": "v2/halo_pipeline_skills.py",
+      "size_bytes": 16447,
+      "sha256": "02defe3d34c648851ab82da104433f6bc73217e1cba7172a6f4db74a00707152"
+    },
+    {
+      "path": "v2/halo_skill_memory/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2/halo_skill_memory/task_references/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2/halo_skill_service.py",
+      "size_bytes": 29546,
+      "sha256": "f366f80d70b4a4130edc0fd48df5dedcd84b5ecf83e4b4de0c3be98ecb615b5f"
+    },
+    {
+      "path": "v2/halo_skills.yaml",
+      "size_bytes": 621,
+      "sha256": "68c58b70a2b25abb8638084b9f5b1c9edb528a8d397f8f6275e29187d17e77ec"
+    },
+    {
+      "path": "v2/halo_task_references.py",
+      "size_bytes": 3588,
+      "sha256": "85e47ec74704b39e6056351c1fb7bf3e76b44b3e9dc7853a0d083cefab382817"
+    },
+    {
+      "path": "v2/model_io.py",
+      "size_bytes": 6096,
+      "sha256": "ca4f832e2f370b6cd86d1bff6d4b0d64539a9ba023d85bb9ff1b6adfb2ab33da"
+    },
+    {
+      "path": "v2/prepare_references.py",
+      "size_bytes": 2756,
+      "sha256": "cba717aa1f5744d129192ab4a2e89bd67a6882a623fc184b5cc98313822457e0"
+    },
+    {
+      "path": "v2/requirements.txt",
+      "size_bytes": 226,
+      "sha256": "c44b6a6ed7d8384f6a11e8ae2cc3aa2504996e5de264e4dc69ccd2b4c364e1d7"
+    },
+    {
+      "path": "v2/robot_calibration/__init__.py",
+      "size_bytes": 70,
+      "sha256": "8316837f63ff0c48cbc890ad1502631a3bf2ecbe401ed1fcb03bbd5982f89c28"
+    },
+    {
+      "path": "v2/robot_calibration/block_skills_v2.py",
+      "size_bytes": 11565,
+      "sha256": "abb670f362ff8f808d8493520c4d372a5083ebc5681f112a2a45d30ce69e1f46"
+    },
+    {
+      "path": "v2/robot_calibration/skill_calibration.py",
+      "size_bytes": 14285,
+      "sha256": "3e89b61eee5b7b637829c67e2fc18d987dad2310cf341b0d5ff086212abbf9ea"
+    },
+    {
+      "path": "v2/run_task.py",
+      "size_bytes": 180,
+      "sha256": "971042c5b7ffc59fb7681a5b73e416895b2ed1efaf4c68f6e7a631345ae85e00"
+    },
+    {
+      "path": "v2/runs/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2/start_model.py",
+      "size_bytes": 1055,
+      "sha256": "425852cd3cb9a67f2d18e5e7b6dbd9f89cd6e841ab8c7922ecb88d3d47c9e18f"
+    },
+    {
+      "path": "v2/task.example.txt",
+      "size_bytes": 343,
+      "sha256": "0d56ddfa778a2b8aef04c61f6b5e3b2420e9ee452d59cc7cfb2078f71ef28229"
+    },
+    {
+      "path": "v2/tests/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2/tests/fake_v2.py",
+      "size_bytes": 3022,
+      "sha256": "651f6a54f3b57ca3f55982bba7282d084efb09401e56116fb45270c86b21d66e"
+    },
+    {
+      "path": "v2/tests/test_model_usage.py",
+      "size_bytes": 7130,
+      "sha256": "303c445ab80f40ccee4ceaab4f2810c0af621d389f18be0182b99840fd676ca3"
+    },
+    {
+      "path": "v2/tests/test_references.py",
+      "size_bytes": 5771,
+      "sha256": "6f3d5024842f7a0d569fd079586c52184f64b254cff1f4f218d58706129ac88c"
+    },
+    {
+      "path": "v2/tests/test_v2_bundle.py",
+      "size_bytes": 5459,
+      "sha256": "3337c63ec498057669d87e42d066786d203b186553835dfffd0cf7ba9e1e3f1c"
+    },
+    {
+      "path": "v2/v2_state.py",
+      "size_bytes": 2985,
+      "sha256": "6f972f6ac37930a28bce3ab52d504aca96e55e07854c1125d3777dfd07c616af"
+    },
+    {
+      "path": "v2/v2_transport.py",
+      "size_bytes": 7594,
+      "sha256": "eb9e0662f8981ef8b68c05f72ea1050a782ae0a78fa4432b4371f3b7b5688f15"
+    },
+    {
+      "path": "v2_standard_compliant_control.png",
+      "size_bytes": 488673,
+      "sha256": "c771633ca01eb2ac3920ebbf04ff638cac0bc18063c6dfd0697566fb09139867"
+    }
+  ],
+  "packaged_files_note": "Final file hashes exclude SOURCE_MANIFEST.json to avoid self-reference."
+}
